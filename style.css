@@ -1,0 +1,141 @@
+/* Import Custom Font */
+@font-face {
+  src: url("fonts/@font-face/NudMotoya\ Maru\ W55\ W2b.woff") format("woff");
+  font-family: "NudMotoya Maru W55 W2b";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NudMotoya Maru W55 W2b", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a40, #0e1a40);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.converter-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Input & select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+select {
+  cursor: pointer;
+}
+/* Input & select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  appearance: none; /* Hides default dropdown arrow */
+  cursor: pointer;
+}
+
+/* Fix dropdown text visibility */
+select option {
+  background: #1a1a40; /* Dark background */
+  color: white; /* White text */
+  font-size: 1.1rem;
+}
+
+/* Optional: Hover effect on dropdown options */
+select option:hover {
+  background: #ff512f;
+  color: white;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #dd2476, #ff512f);
+  transform: scale(1.05);
+}
+
+/* Result */
+.result-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.hasil {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
