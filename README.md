@@ -20,4 +20,4 @@ The Temperature Converter is a basic web application that allows users to conver
 - **JavaScript**: Handles the conversion logic and updates the temperature values in real-time.
 
 ##Screenshot
-![Temperature Converter](suhu.png)
+![Temperature Converter](suhu.PNG)
